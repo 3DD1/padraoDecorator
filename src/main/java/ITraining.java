@@ -1,4 +1,4 @@
 public interface ITraining {
-    int amountOfWater();
+    int getAmountOfWater();
     String getStructure();
 }
