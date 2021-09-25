@@ -15,19 +15,20 @@ public abstract class TrainingDecorator implements ITraining {
         this.training = training;
     }
 
-    public abstract int getAmountOfWaterConsumed();
+    public abstract float getAmountOfWaterConsumed();
 
-    public int getAmountOfWater() {
+    public float getAmountOfWater() {
         return this.training.getAmountOfWater() - (this.getAmountOfWaterConsumed());
     }
 
     public abstract String getNameStructure();
 
     public String getStructure(){
-        return this.training.getStructure() + "/" + this.getNameStructure();
+        return this.training.getStructure() + " - Training of the day: " + this.getNameStructure();
     }
 
     public void setStructure(String structure) {
         this.structure = structure;
     }
+
 }

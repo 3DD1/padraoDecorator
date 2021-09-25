@@ -1,17 +1,16 @@
 public class Sportsperson implements ITraining {
-    private int amountOfWater;
+    private float amountOfWater;
 
     public Sportsperson(){
 
     }
-    public Sportsperson(int amountOfWater){
+    public Sportsperson(float amountOfWater){
         this.amountOfWater = amountOfWater;
     }
-    public int getAmountOfWater() {
+    public float getAmountOfWater() {
         return amountOfWater;
     }
     public String getStructure() {
-        return "Edmilson";
+        return "Student training sheet: Edmilson";
     }
-
 }
